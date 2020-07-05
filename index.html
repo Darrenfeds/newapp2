@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+body{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 10%;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	-webkit-filter: blur(0px);
+	
+}
+
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 210px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+    background: transparent;
+	border: 2px solid rgba(255,255,255,0.6);
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 2px solid rgba(255,255,255,0.6);
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-color: black;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+
+</style>
+
+</head>
+<BODY background="background.jpg" >
+		
+		<center><form name="login">
+		<div class="login">
+		        <font size="30" color="white">login<br></font>
+				<input type="text" placeholder="user id" name="userid"><br>
+				<br><font size="30" color="white">password</font><br>
+				<input type="password" placeholder="password" name="pswrd"><br>
+				<input type="button" onclick="check(this.form)" value="Login"/>
+				</div>
+				
+		</form></center>
+		
+		<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "admin" && form.pswrd.value == "admin123")
+  {
+    window.open("test3.html","_self")
+  }
+ else
+ {
+   alert("Please subscribe to my channel for more coding!")
+  }
+}
+</script>
+</body>
+</html>
